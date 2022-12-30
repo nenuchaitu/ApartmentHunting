@@ -1,3 +1,5 @@
+// find explanation in txt file
+
 function renderOutput(maxDistances) {
   const minDistance = Math.min(...maxDistances);
   const minDistanceNodes = [];
@@ -6,7 +8,6 @@ function renderOutput(maxDistances) {
       minDistanceNodes.push(index + 1);
     }
   });
-  console.log(minDistanceNodes);
   let blocksString = "";
   for (let i = 0; i < minDistanceNodes.length; i++) {
     if (i == minDistanceNodes.length - 1 && minDistanceNodes.length > 1) {
